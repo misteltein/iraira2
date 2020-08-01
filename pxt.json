@@ -3,7 +3,8 @@
     "description": "",
     "dependencies": {
         "core": "*",
-        "radio": "*"
+        "radio": "*",
+        "pxt-katakana": "github:mbitfun/pxt-katakana#v1.0.16"
     },
     "files": [
         "main.blocks",

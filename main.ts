@@ -1,3 +1,17 @@
+input.onPinPressed(TouchPin.P2, function () {
+    if (0 == goal && 0 == gameover) {
+        goal = 1
+        music.startMelody(music.builtInMelody(Melodies.Prelude), MelodyOptions.Once)
+        basic.showIcon(IconNames.Heart)
+        basic.pause(200)
+        for (let index = 0; index < 5; index++) {
+            basic.showNumber(score)
+            basic.pause(100)
+            katakana.setScrollTime(160)
+            katakana.showString("ﾃﾝ")
+        }
+    }
+})
 input.onButtonPressed(Button.AB, function () {
     control.reset()
     start()
