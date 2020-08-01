@@ -7,8 +7,6 @@ input.onPinPressed(TouchPin.P2, function () {
         for (let index = 0; index < 5; index++) {
             basic.showNumber(score)
             basic.pause(100)
-            katakana.setScrollTime(160)
-            katakana.showString("ﾃﾝ")
         }
     }
 })
